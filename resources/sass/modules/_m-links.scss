@@ -11,13 +11,20 @@
         }
 
         a{
-            border-bottom: 2px solid rgba(57, 87, 154, 0.2);
+            // border-bottom: 2px solid rgba(57, 87, 154, 0.2);
+            border-bottom: 2px solid #333333;
             text-decoration: none;
             font-size: 12px;
             text-transform: uppercase;
             color: #666;
             padding: 0 0 6px 0;
             font-weight: 700;
+
+            &:hover{
+                color: #aaa;
+                border-bottom: #666666;
+                opacity: 1;
+            }
         }
     }
 }
