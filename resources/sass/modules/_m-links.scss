@@ -1,5 +1,9 @@
 .m-links{
-    padding: 24px 0 48px;
+    padding: 24px 0 124px;
+
+    @include breakpoint($bp-laptop){
+        padding: 24px 0 48px;
+    }
 
     ul{
         width: 100%;
@@ -7,7 +11,12 @@
 
         li{
             display: inline-block;
-            padding: 0 24px;
+            padding: 0 8px;
+
+            @include breakpoint($bp-tablet){
+                padding: 0 24px;
+
+            }
         }
 
         a{
