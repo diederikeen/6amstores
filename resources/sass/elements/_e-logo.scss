@@ -1,0 +1,20 @@
+.e-logo{
+    // background-color: #111;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+
+    @include breakpoint($bp-tablet){
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    img{
+        width: 75%;
+    }
+}

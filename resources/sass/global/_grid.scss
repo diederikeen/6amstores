@@ -1,0 +1,24 @@
+$max-col: 3;
+$gutter-width: 12px;
+
+@include breakpoint($bp-tablet){
+	$gutter-width: 20px;
+}
+
+.e-row{
+	margin-left: -$gutter-width;
+	margin-right: -$gutter-width;
+	width: calc(100% + #{$gutter-width} * 2);
+
+	&:after{
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+@mixin column-width($set-col){
+	width: percentage( $set-col / $max-col );
+	float: left;
+	padding: 0px $gutter-width;
+}

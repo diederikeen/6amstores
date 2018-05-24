@@ -1,0 +1,20 @@
+.m-instagram{
+    padding: 48px 0;
+    min-height: 300px;
+
+    &:after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    img{
+        float: left;
+
+        width: 100%;
+
+        @include breakpoint($bp-tablet){
+           width: calc(100% / 3);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.m-links{
+    padding: 24px 0 48px;
+
+    ul{
+        width: 100%;
+        text-align: center;
+
+        li{
+            display: inline-block;
+            padding: 0 24px;
+        }
+
+        a{
+            border-bottom: 2px solid rgba(57, 87, 154, 0.2);
+            text-decoration: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #666;
+            padding: 0 0 6px 0;
+            font-weight: 700;
+        }
+    }
+}

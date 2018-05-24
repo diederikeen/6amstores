@@ -1,0 +1,80 @@
+.lazy-load{
+    opacity: 0;
+    transition: .625s $bassieSlide;
+    transition-property: opacity, transform;
+    will-change: transform, opacity;
+
+    &[data-direction="ltr"]{
+        transform: translateY(50px);
+
+        &.lazy-loaded{
+            transform: translateY(0px);
+        }
+
+        @include breakpoint($bp-tablet){
+            transform: translateX(-100px);
+
+            &.lazy-loaded{
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    &[data-direction="rtl"]{
+        transform: translateY(50px);
+
+        &.lazy-loaded{
+            transform: translateY(0px);
+        }
+
+        @include breakpoint($bp-tablet){
+            transform: translateX(100px);
+
+            &.lazy-loaded{
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    &[data-direction="btt"]{
+        transform: translateY(50px);
+
+        &.lazy-loaded{
+            transform: translateY(0px);
+        }
+    }
+
+    &[data-direction="ttb"]{
+        transform: translateY(-50px);
+
+        &.lazy-loaded{
+            transform: translateY(0px);
+        }
+    }
+
+    // @include breakpoint($bp-tablet){
+        &[data-delay="200"]{
+            transition-delay: 200ms;
+        }
+
+        &[data-delay="400"]{
+            transition-delay: 400ms; 
+        }
+
+        &[data-delay="600"]{
+            transition-delay: 600ms; 
+        }
+
+        &[data-delay="800"]{
+            transition-delay: 800ms; 
+        }
+
+        &[data-delay="1000"]{
+            transition-delay: 1000ms; 
+        }
+    // }
+
+    &.lazy-loaded{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,11 @@
+.m-container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 780px;
+    width: 100%;
+    padding: 0px 16px;
+
+    @include breakpoint($bp-tablet){
+        padding: 0px 20px;
+    }
+}

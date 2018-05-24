@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box; 
+}
+
+html,body{
+  padding: 0;
+}
+
+body{
+  @include FontRegular;
+  color: $text-color-dark;
+  font-size: 14px;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  scroll-behaviour: smooth;
+  background-color: #111111;
+
+  @include breakpoint($bp-tablet){
+    font-size: 16px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  @include FontBold;
+  margin: 0px;
+  font-weight: auto;
+}
+
+a{
+  transition: $s-fast $bassieSlide;
+  transition-property: color, opacity, background;
+
+  &:hover{
+    opacity: .7;
+  }
+}
+
+p {
+  color: $black;
+}
+
+.e-inline-icon{
+  width: 0.6rem;
+  height: 0.6rem;
+  fill: $black;
+  transform: translateY(-50%);
+}

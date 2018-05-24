@@ -1,0 +1,30 @@
+.is-mobile-nav-open{
+	.m-mobile-nav{
+		transform: translateX(0px);
+
+		li{
+			transform: translateX(0px);
+			opacity: 1;			
+		}
+	}
+
+	.e-burger-button{
+
+		span{
+
+			&:first-child{
+				transform: rotate(45deg);
+				top: 6px;
+			}
+
+			&:nth-child(2){
+				opacity: 0;
+			}
+
+			&:last-child{
+				transform: rotate(-45deg);
+				top: -10px;
+			}
+		}
+	}
+}
